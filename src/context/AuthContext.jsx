@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
                 title: "Login Successful",
                 icon: "success",
                 toast: true,
-                timer: 6000,
+                timer: 3000,
                 position: 'top-right',
                 timerProgressBar: true,
                 showConfirmButton: false,
@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }) => {
                 title: "Username or passowrd does not exist",
                 icon: "error",
                 toast: true,
-                timer: 6000,
+                timer: 3000,
                 position: 'top-right',
                 timerProgressBar: true,
                 showConfirmButton: false,
@@ -86,7 +86,7 @@ export const AuthProvider = ({ children }) => {
                 title: "Registration Successful, Login Now",
                 icon: "success",
                 toast: true,
-                timer: 6000,
+                timer: 3000,
                 position: 'top-right',
                 timerProgressBar: true,
                 showConfirmButton: false,
@@ -98,7 +98,7 @@ export const AuthProvider = ({ children }) => {
                 title: "An Error Occured " + response.status,
                 icon: "error",
                 toast: true,
-                timer: 6000,
+                timer: 3000,
                 position: 'top-right',
                 timerProgressBar: true,
                 showConfirmButton: false,
@@ -110,12 +110,12 @@ export const AuthProvider = ({ children }) => {
         setAuthTokens(null)
         setUser(null)
         localStorage.removeItem("authTokens")
-        history.push("/login")
+        history.push("/")
         swal.fire({
-            title: "YOu have been logged out...",
+            title: "You have been logged out.",
             icon: "success",
             toast: true,
-            timer: 6000,
+            timer: 3000,
             position: 'top-right',
             timerProgressBar: true,
             showConfirmButton: false,
