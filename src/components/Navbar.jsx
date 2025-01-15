@@ -35,11 +35,16 @@ const Navbar = () => {
 
       {token !== null &&
         <>
+
+        <Link to="/create-patient">
+          <button type="button" className="btn btn-primary px-3 mx-1">Add Patient</button>
+          </Link>
+
           <Link to="/dashboard">
           <button type="button" className="btn btn-primary px-3 mx-1">Dashboard</button>
           </Link>
 
-          <button type="button" className="btn btn-primary px-3" onClick={logoutUser}>Log out</button>
+          <button type="button" className="btn btn-danger px-3" onClick={logoutUser}>Log out</button>
         </>
       }
         
