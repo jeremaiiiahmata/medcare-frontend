@@ -34,7 +34,7 @@ const LoginForm = () => {
         <img
           src="../../public/images/placeholder.jpg"
           alt="Description"
-          className="img-fluid vh-100 w-100"
+          className="img-fluid vh-100 w-100 shadow"
           style={{ objectFit: "cover" }}
         />
       </div>

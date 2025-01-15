@@ -8,6 +8,7 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import DashBoard from './pages/DashBoard'
 import Navbar from './components/Navbar'
+import CreatePatientForm from './components/forms/CreatePatientForm'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <AuthProvider>
         <Switch>
           <PrivateRoute component={DashBoard} path="/dashboard" exact />
+          <PrivateRoute component={CreatePatientForm} path="/create-patient" exact />
           <Route component={LoginPage} path="/login" />
           <Route component={RegisterPage} path="/register" />
           <Route component={HomePage} path="/" />

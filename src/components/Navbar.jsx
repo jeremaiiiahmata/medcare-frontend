@@ -34,9 +34,13 @@ const Navbar = () => {
       } 
 
       {token !== null &&
+        <>
+          <Link to="/dashboard">
+          <button type="button" className="btn btn-primary px-3 mx-1">Dashboard</button>
+          </Link>
 
           <button type="button" className="btn btn-primary px-3" onClick={logoutUser}>Log out</button>
-      
+        </>
       }
         
       </div>

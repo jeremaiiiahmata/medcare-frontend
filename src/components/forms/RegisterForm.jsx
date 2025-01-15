@@ -75,7 +75,7 @@ const RegisterForm = () => {
                 onChange={e => setPasswordValidator(e.target.value)}
               />
             </div>
-            <button type="submit" className="btn btn-primary w-100">Login</button>
+            <button type="submit" className="btn btn-primary w-100">Register</button>
             <Link to="/login">
               <p className='my-3 py-1'>Already have an account? Log in here.</p>
             </Link>
@@ -83,11 +83,11 @@ const RegisterForm = () => {
         </div>
       </div>
 
-      <div className="col-5 col-md-5 p-0">
+      <div className="col-6 col-md-6 p-0">
         <img
           src="../../public/images/placeholder.jpg"
           alt="Description"
-          className="img-fluid vh-100 w-100"
+          className="img-fluid vh-100 w-100 shadow"
           style={{ objectFit: "cover" }}
         />
       </div>
