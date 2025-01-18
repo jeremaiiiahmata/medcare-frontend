@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
             setAuthTokens(data)
             setUser(jwtDecode(data.access))
             localStorage.setItem("authTokens", JSON.stringify(data))
-            history.push("/")
+            history.push("/dashboard")
             swal.fire({
                 title: "Login Successful",
                 icon: "success",

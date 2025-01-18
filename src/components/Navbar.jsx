@@ -15,7 +15,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-primary">
+    <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom bg-primary">
 
         <h3 className="mx-3 py-2 px-2 link-secondary">Medcare</h3>
 
@@ -35,11 +35,16 @@ const Navbar = () => {
 
       {token !== null &&
         <>
+
+        <Link to="/create-patient">
+          <button type="button" className="btn btn-primary px-3 mx-1">Add Patient</button>
+          </Link>
+
           <Link to="/dashboard">
           <button type="button" className="btn btn-primary px-3 mx-1">Dashboard</button>
           </Link>
 
-          <button type="button" className="btn btn-primary px-3" onClick={logoutUser}>Log out</button>
+          <button type="button" className="btn btn-danger px-3" onClick={logoutUser}>Log out</button>
         </>
       }
         
