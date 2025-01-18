@@ -1,8 +1,9 @@
 import {useState, useEffect, useContext} from 'react'
-import AuthContext from '../context/AuthContext';
-import useAxios from '../utils/useAxios'
+import AuthContext from '../../context/AuthContext';
+import useAxios from '../../utils/useAxios'
 import { jwtDecode } from "jwt-decode"
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar';
+import Sidebar from '../../components/Sidebar';
 
 const DashBoard = () => {
 
@@ -39,10 +40,17 @@ const DashBoard = () => {
 
   return (
     <div>
-      <Navbar/>
-      <h1>Hi, {username} {user_id}</h1>
-      <p>{response}</p>
+    <Navbar />
+    <div style={{ display: 'flex', height: '100vh' }}>
+      {/* Sidebar */}
+      <Sidebar />
+      {/* Main Content */}
+      <div style={{ flex: 1, padding: '20px' }}>
+        <h1>Hi, {username} {user_id}</h1>
+        <p>{response}</p>
+      </div>
     </div>
+  </div>
   )
 }
 
