@@ -10,6 +10,7 @@ import DashBoard from './pages/user/DashBoard'
 import CreatePatientForm from './components/forms/CreatePatientForm'
 import CreatePreAssessmentForm from './components/forms/CreatePreAssessmentForm'
 import CreatePrescriptionForm from './components/forms/CreatePrescriptionForm'
+import EditProfileForm from './components/forms/EditProfileForm'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <PrivateRoute component={CreatePatientForm} path="/create-patient" exact />
           <PrivateRoute component={CreatePrescriptionForm} path="/create-prescription" exact />
           <PrivateRoute component={CreatePreAssessmentForm} path="/create-preassessment" exact />
+          <PrivateRoute component={EditProfileForm} path="/edit-profile" exact />
           <Route component={LoginPage} path="/login" />
           <Route component={RegisterPage} path="/register" />
           <Route component={HomePage} path="/" />

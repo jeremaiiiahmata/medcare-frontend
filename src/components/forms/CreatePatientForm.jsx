@@ -5,9 +5,16 @@ import { Link } from 'react-router-dom'; // Importing Link for navigation betwee
 
 const CreatePatientForm = () => {
   const api = useAxios(); // Axios instance for making authenticated API calls
+  const token = localStorage.getItem("authTokens"); //gets the token 
+
+  if (token) { //if there is the token, decode the toke.
+    const decode = jwtDecode(token) //decodes of the token to get the credentials
+    var user_id = decode.user_id // id of the current user (doctor's id)
+  }
 
   // Initializing the state for patient information
   const [patient, setPatient] = useState({
+    doctor: user_id,
     first_name: "", // Patient's first name
     last_name: "", // Patient's last name
     blood_type: "", // Patient's blood type
