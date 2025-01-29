@@ -1,16 +1,18 @@
+@import "tailwindcss";
+
 body {
   margin: 0;
-  background-color: #8EB69B;
+  background-color: #8eb69b;
 }
 
-.bg-primary{
-  background-color: #DAF1DE !important;
-  color: #0B2B26;
+.bg-primary {
+  background-color: #daf1de !important;
+  color: #0b2b26;
 }
 
 .form-primary {
-  background-color: #DAF1DE; /* New background color */
-  border-color: #DAF1DE; /* New border color */
+  background-color: #daf1de; /* New background color */
+  border-color: #daf1de; /* New border color */
 }
 
 .btn-primary {
@@ -19,16 +21,16 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #0B2B26; /* Darker shade for hover */
-  border-color: #0B2B26;
+  background-color: #0b2b26; /* Darker shade for hover */
+  border-color: #0b2b26;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
   border-color: #235347;
   color: #235347;
 }
 
 .btn-outline-primary:hover {
-  background-color: #0B2B26; /* Darker shade for hover */
-  border-color: #0B2B26;
+  background-color: #0b2b26; /* Darker shade for hover */
+  border-color: #0b2b26;
 }
